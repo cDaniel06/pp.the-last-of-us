@@ -1,46 +1,77 @@
-@media (max-width: 1280px){
-    body{
-        padding: 0 40px;
+/* DESKTOP MENOR */
+@media (max-width: 1280px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .informacoes .descricao {
+        width: 60%;
     }
 }
-@media (max-width: 768px){
-    .informacoes{
 
+/* TABLET */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 15px;
+        overflow-x: hidden;
+    }
+
+    .informacoes {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    }
-.informacoes .descriçao{
-        width: 60%;
         text-align: center;
     }
-@media (max-width: 425px){
-    .informacoes .logo{
-        max-width:300px;
-    }
 
-    .informacoes .descriçao{
+    .informacoes .descricao {
         width: 100%;
     }
 
-    .menu-lateral{
+    .search-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .login-container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 425px) {
+
+    body {
+        padding: 0 10px;
+    }
+
+    .informacoes .logo {
+        max-width: 280px;
+        margin-bottom: 30px;
+    }
+
+    .menu-lateral {
         position: static;
-        min-height: auto;
         width: 100%;
-        margin-top: 50px;
+        min-height: auto;
+        margin-top: 30px;
     }
 
-    .menu-lateral ul{
+    .menu-lateral ul {
         flex-direction: row;
+        justify-content: center;
     }
 
-    .conteudo{
-        min-height: 70vh;
-        gap: 50px;
+    .conteudo {
+        min-height: auto;
+        gap: 40px;
     }
 
-    body{
-padding: 40px;
+    button[type="submit"],
+    .login-container a {
+        font-size: 14px;
+        padding: 8px 10px;
     }
 }
